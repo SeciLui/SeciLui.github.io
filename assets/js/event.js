@@ -4,33 +4,12 @@ $(document).ready(function () {
   const event = [
     // eslint-disable-next-line linebreak-style
     {
-      title: "Talk on ABC",
-      image: "assets/images/event/image3.jpg",
+      title: "Pitch CIY, during HH_Lyon#6",
+      image: "assets/images/event/image1.jpg",
     },
     {
-      title: "Keynote on XYZ",
+      title: "Team CIY, prix en santé mentale",
       image: "assets/images/event/image2.jpg",
-    },
-    { title: "Group Picture", image: "assets/images/event/image1.jpg" },
-    {
-      title: "Presentation",
-      image: "assets/images/event/image4.jpg",
-    },
-    {
-      title: "Note on XYZ",
-      image: "assets/images/event/image5.jpg",
-    },
-    {
-      title: "Keytopics",
-      image: "assets/images/event/image6.jpg",
-    },
-    {
-      title: "The Gist",
-      image: "assets/images/event/image7.jpg",
-    },
-    {
-      title: "Thank You",
-      image: "assets/images/event/image8.jpg",
     },
   ];
   // Filling the details from the object array event

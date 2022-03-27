@@ -34,6 +34,11 @@ const techStack = [
     langName: "JavaScript",
     langDesc: "<li>JavaScript, often abbreviated JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS</li>",
   },
+	{
+		langImage: "assets/images/techstack-page/easyeda.png",
+		langName: "EasyEDA",
+		langDesc: "<li>EasyEDA is a web-based EDA tool suite that enables hardware engineers to design, simulate, share - publicly and privately - and discuss schematics, simulations and printed circuit boards.</li>",
+	},
 ];
 
 const displayTechStacksCards = () => {

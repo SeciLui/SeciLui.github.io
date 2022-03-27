@@ -2,7 +2,6 @@ AOS.init();
 
 //  Work experience cards
 
-
 const experiencecards = document.querySelector(".experience-cards");
 const exp = [
   {
@@ -10,7 +9,7 @@ const exp = [
     cardImage: "assets/images/experience-page/qualup.png",
     place: "71260 Lugny, France",
     time: "(March, 2020 - present)",
-      desp:"<li>Designed a “CLI (Command Line Interface) software that untwist images with the help of qr code simply placed in the field of view of the camera.</li><li>Created a small embedded ip camera system.</li><li>Worked on the project “FWS (Filament Width Sensor) embedded system capable of detecting the width of the filament of 3D printers.</li><li>Designed multiple “PCB (Printed Circuit Board) with esp32 module that use camera and thermal-camera.</li>",
+    desp:"<li>Designed a “CLI (Command Line Interface) software that untwist images with the help of qr code simply placed in the field of view of the camera.</li><li>Created a small embedded ip camera system.</li><li>Worked on the project “FWS (Filament Width Sensor) embedded system capable of detecting the width of the filament of 3D printers.</li><li>Designed multiple “PCB (Printed Circuit Board) with esp32 module that use camera and thermal-camera.</li>",
   },
 ];
 
@@ -44,7 +43,6 @@ const showCards2 = () => {
 };
 document.addEventListener("DOMContentLoaded", showCards2);
 
-
 // Volunteership Cards
 
 const volunteership = document.querySelector(".volunteership");
@@ -76,9 +74,7 @@ const showCards = () => {
 };
 document.addEventListener("DOMContentLoaded", showCards);
 
-
 // Hackathon Section
-
 
 const hackathonsection = document.querySelector(".hackathon-section");
 const mentor = [
@@ -90,10 +86,10 @@ const mentor = [
 		link: "https://nuitcodecitoyen.org/home.html",
 	},
 	{
-		title: "Hacking Health Lyon",
+		title: "Hacking Health Lyon #6",
 		subtitle: "Student | Embedded Developer",
 		image: "assets/images/experience-page/hh_lyon.jpg",
-		desp: "To be done the 11,12,13 march 2022.",
+		desp: "I worked on the project CIY, le compagnon de mon élan de vie.",
 		link: "https://www.hhlyon.org/",
 	},
 
@@ -102,7 +98,7 @@ const mentor = [
 const showCards3 = () => {
   let output = "";
   mentor.forEach(
-      ({ title, image, subtitle, desp, link}) =>
+    ({ title, image, subtitle, desp }) =>
       (output += `
       <div class="blog-slider__item swiper-slide">
         <div class="blog-slider__img">

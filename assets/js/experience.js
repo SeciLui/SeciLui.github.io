@@ -79,27 +79,26 @@ document.addEventListener("DOMContentLoaded", showCards);
 const hackathonsection = document.querySelector(".hackathon-section");
 const mentor = [
 	{
-		title: "Civic Tech Night Lyon",
-		subtitle: "Embedded Developer",
-		image: "assets/images/experience-page/ncc.png",
-		desp: "I worked on the project Witness Angel, in order to create the first embedded prototype.",
-		link: "https://nuitcodecitoyen.org/home.html",
-	},
-	{
 		title: "Hacking Health Lyon #6",
 		subtitle: "Student | Embedded Developer",
 		image: "assets/images/experience-page/hh_lyon.jpg",
 		desp: "I worked on the project CIY, le compagnon de mon élan de vie.",
 		link: "https://www.hhlyon.org/",
 	},
-
+	{
+		title: "Civic Tech Night Lyon",
+		subtitle: "Embedded Developer",
+		image: "assets/images/experience-page/ncc.png",
+		desp: "I worked on the project Witness Angel, in order to create the first embedded prototype.",
+		link: "https://nuitcodecitoyen.org/home.html",
+	},
 ];
 
 const showCards3 = () => {
-  let output = "";
-  mentor.forEach(
-    ({ title, image, subtitle, desp }) =>
-      (output += `
+	let output = "";
+	mentor.forEach(
+		({ title, image, subtitle, desp, link }) =>
+		(output += `
       <div class="blog-slider__item swiper-slide">
         <div class="blog-slider__img">
             <img src="${image}" alt="">
@@ -108,11 +107,11 @@ const showCards3 = () => {
           <div class="blog-slider__title">${title}</div>
           <span class="blog-slider__code">${subtitle}</span>
           <div class="blog-slider__text">${desp}</div>
-          <a href=${link} class="blog-slider__button">Read More</a>
+          <a href="${link}" class="blog-slider__button">Read More</a>
         </div>
       </div>
       `)
-  );
-  hackathonsection.innerHTML = output;
+	);
+	hackathonsection.innerHTML = output;
 };
 document.addEventListener("DOMContentLoaded", showCards3);
